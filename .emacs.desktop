@@ -1,0 +1,767 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Apr 16 13:40:32 2015
+;; Desktop file format version 206
+;; Emacs version 24.4.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (21808 7744 682144 0) (desktop . "206") "nigel@Nigels-MacBook-Pro.local" nil nil ((((font-backend mac-ct ns) (fontsize . 12) (font . "-*-Monaco-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (foreground-color . "#ffffff") (background-color . "#141312") (line-spacing) (left-fringe . 10) (right-fringe . 11) (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (alpha) (fullscreen . fullboth) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "white") (environment) (display . "Nigels-MacBook-Pro.local") (frameset--id . "FC0B-5B86-87AD-733B") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (visibility . t) (height . 89) (width . 360) (left . 0) (top . 0)) ((min-height . 8) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 16) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 128) (min-pixel-width . 140) (min-pixel-height-ignore . 64) (min-pixel-width-ignore . 112) (min-pixel-height-safe . 32) (min-pixel-width-safe . 28)) hc (pixel-width . 2556) (pixel-height . 1420) (total-width . 365) (total-height . 89) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 1434) (pixel-height . 1420) (total-width . 205) (total-height . 89) (normal-height . 1.0) (normal-width . 0.561758548499651) (combination-limit) (leaf (pixel-width . 1434) (pixel-height . 702) (total-width . 205) (total-height . 44) (normal-height . 0.49090909090909096) (normal-width . 1.0) (buffer "hasher_tests.c" (selected) (hscroll . 0) (fringes 10 11 nil) (margins nil) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 5784) (start . 5416))) (leaf (last . t) (pixel-width . 1434) (pixel-height . 718) (total-width . 205) (total-height . 45) (normal-height . 0.509090909090909) (normal-width . 1.0) (buffer "hasherchip.c" (selected) (hscroll . 0) (fringes 10 11 nil) (margins nil) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 647) (start . 342)))) (leaf (last . t) (pixel-width . 1122) (pixel-height . 1420) (total-width . 160) (total-height . 89) (normal-height . 1.0) (normal-width . 0.43824145150034893) (buffer "gshasher.c" (selected . t) (hscroll . 0) (fringes 10 11 nil) (margins nil) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 11481) (start . 10006)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("load_work" "VERIFY_WORK" "VERIFY_WORKD" "hc_reset" "o" "vin" "def nvm_conv" "smbus_emulator->" "i2c_ad" "i2c_addr" "read_func" "emulator" "POL_ADDR" "error" "pol_nvm_entry_in_table" "read_mfr_id"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/Users/nigel/bitsplit/src/gsminer/gen/laminar.h" "/Users/nigel/bitsplit/src/gsminer/gsminer.h" "/Users/nigel/bitsplit/.git/COMMIT_EDITMSG" "/Users/nigel/bitsplit/src/gsminer/gshasher.c" "/Users/nigel/bitsplit/src/gsminer/gsminer.c" "/Users/nigel/Documents/21E6/blocks_04152015.json" "/Users/nigel/bitsplit/src/board/swan_board.h" "/Users/nigel/bitsplit/.git/COMMIT_EDITMSG" "/Users/nigel/bitsplit/src/util/arm_smbus.c" "/Users/nigel/newtron/.git/COMMIT_EDITMSG" "/Users/nigel/bitsplit/.git/COMMIT_EDITMSG" "/Users/nigel/bitsplit/src/hasher/tests/unittest_hasherchip.c" "/Users/nigel/bitsplit/src/util/arm_smbus.c" "/Users/nigel/bitsplit/src/pol/tests/stub_smbus.h" "/Users/nigel/bitsplit/src/util/smbus.h" "/Users/nigel/bitsplit/src/pol/tests/stub_smbus.c" "/Users/nigel/bitsplit/src/pol/pol_emulator.h" "/Users/nigel/bitsplit/src/pol/pol_emulator.c" "/Users/nigel/bitsplit/.git/COMMIT_EDITMSG" "/Users/nigel/bitsplit/src/acceptance_tests/hasher_tests.c" "/Users/nigel/bitsplit/src/board/stub_board.h" "/Users/nigel/bitsplit/src/lib/cc3200/makedefs" "lib/cc3200/Makefile" "/Users/nigel/bitsplit/misc/config.mk" "/Users/nigel/bitsplit/src/board/swan_board.h" "/Users/nigel/bitsplit/src/pol/cal.h" "/Users/nigel/bitsplit/src/pol/tests/unittest_cal.c" "/Users/nigel/bitsplit/.git/COMMIT_EDITMSG" "/Users/nigel/bitsplit/src/Makefile" "/Users/nigel/bitsplit/.git/COMMIT_EDITMSG"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/gsminer/gshasher.c"
+  "gshasher.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  11481
+  '(7546 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/hasher/hasherchip.c"
+  "hasherchip.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  647
+  '(277 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/acceptance_tests/hasher_tests.c"
+  "hasher_tests.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  5784
+  '(371 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/gsminer/gsminer.h"
+  "gsminer.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  941
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/pv3012constants.py"
+  "pv3012constants.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1287
+  '(1403 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/gsminer/gsminer.c"
+  "gsminer.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  771
+  '(771 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/pv3012.py"
+  "pv3012.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  56123
+  '(7910 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/psu.py"
+  "psu.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  790
+  '(3683 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/swan_board.h"
+  "swan_board.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1757
+  '(1418 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/board.c"
+  "board.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  9831
+  '(9831 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/pol.h"
+  "pol.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1544
+  '(1544 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/cal.c"
+  "cal.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  368
+  '(368 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/pol.c"
+  "pol.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  93
+  '(93 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/acceptance_tests/pol_tests.c"
+  "pol_tests.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  760
+  '(231 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/pmbus.h"
+  "pmbus.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1197
+  '(4247 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/tests/unittest_cal.c"
+  "unittest_cal.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  977
+  '(1412 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/tests/stub_smbus.c"
+  "stub_smbus.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  304
+  '(328 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/hasher/tests/unittest_hasherchip.c"
+  "unittest_hasherchip.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  2628
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/tests/stub_smbus.h"
+  "stub_smbus.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  211
+  '(665 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/pol_emulator.h"
+  "pol_emulator.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  360
+  '(392 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/pol_emulator.c"
+  "pol_emulator.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1413
+  '(164 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/Makefile"
+  "Makefile"
+  'makefile-bsdmake-mode
+  '(magit-auto-revert-mode)
+  1798
+  '(1798 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/pmbus.c"
+  "pmbus.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1
+  '(3135 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/acceptance_tests/test_it.c"
+  "test_it.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  81
+  '(81 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/util/diag.c"
+  "diag.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  342
+  '(233 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/hasher/pllconfig.h"
+  "pllconfig.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  625
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/cal.h"
+  "cal.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  58
+  '(58 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/stub_board.h"
+  "stub_board.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1328
+  '(848 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/board.h"
+  "board.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  21
+  '(49 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/hasher/hasherchip.h"
+  "hasherchip.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  3024
+  '(3293 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/misc/config.mk"
+  "config.mk"
+  'makefile-bsdmake-mode
+  '(magit-auto-revert-mode)
+  57
+  '(57 nil)
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/acceptance_tests/test_errors.h"
+  "test_errors.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1481
+  '(77 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/util/hex.h"
+  "hex.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  79
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/util/hex.c"
+  "hex.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1343
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/lorien_board.h"
+  "lorien_board.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  513
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/refclkgen.h"
+  "refclkgen.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  740
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/pol/tests/test_pol_hw.c"
+  "test_pol_hw.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1054
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/sweep_chips.py"
+  "sweep_chips.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  54691
+  '(33786 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/acceptance_tests/hasher_tests.h"
+  "hasher_tests.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  55
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/util/errors.h"
+  "errors.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/hasher/packer_formats.h"
+  "packer_formats.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  1564
+  '(1644 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/board/refclkgen.c"
+  "refclkgen.c"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  15388
+  '(15981 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/bitsplit/src/acceptance_tests/test_it.h"
+  "test_it.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  46
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/pmbus.py"
+  "pmbus.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  5210
+  '(8220 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/board_config.py"
+  "board_config.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  7652
+  '(4684 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/board.py"
+  "board.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  2597
+  '(2597 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/scripts/reprogram_pols.py"
+  "reprogram_pols.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  6861
+  '(6963 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/board_fpga.py"
+  "board_fpga.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  2651
+  '(3773 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/hasherchip.py"
+  "hasherchip.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  36094
+  '(25370 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/powermanager.py"
+  "powermanager.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  6204
+  '(7447 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/mfg_test/mfg_test/hardware/i2c_gpio.py"
+  "i2c_gpio.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  5610
+  '(1142 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/pol_status_scam.py"
+  "pol_status_scam.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/custom_work.py"
+  "custom_work.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1740
+  '(1676 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/work.py"
+  "work.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1129
+  '(4186 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/geepistrano/geepistrano.py"
+  "geepistrano.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  612
+  '(941 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/mfg_test/mfg_test/hardware/smbus_usb.py"
+  "smbus_usb.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1257
+  '(1455 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/blah.v"
+  "blah.v"
+  'verilog-mode
+  '(magit-auto-revert-mode)
+  246
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tcal/tcal/tools/debug.py"
+  "debug.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1923
+  '(1786 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tfunc/tfunc/tools/debug.py"
+  "debug.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  194
+  '(1959 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tfunc/tfunc/hardware/station.py"
+  "station.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1555
+  '(1298 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tcal/tcal/suite/pol.py"
+  "pol.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  18577
+  '(16430 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tcal/tcal/__main__.py"
+  "__main__.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  2483
+  '(209 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tcal/tcal/hardware/station.py"
+  "station.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  3160
+  '(341 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tcal/tcal/hardware/rpi.py"
+  "rpi.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  3651
+  '(3651 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/pol.py"
+  "pol.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  727
+  '(727 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tfunc/tfunc/suite/fpgas.py"
+  "fpgas.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  412
+  '(412 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/newtron/board_fpga.h"
+  "board_fpga.h"
+  'c-mode
+  '(abbrev-mode magit-auto-revert-mode)
+  269
+  '(269 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/nigel/tfunc/tfunc/__main__.py"
+  "__main__.py"
+  'python-mode
+  '(magit-auto-revert-mode)
+  1665
+  '(1131 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
