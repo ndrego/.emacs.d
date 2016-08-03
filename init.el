@@ -12,13 +12,18 @@
 
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/")
 
+(require 'use-package)
 (require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
+(mapc (lambda(p) (push p package-archives))
+      '(("marmalade" . "http://marmalade-repo.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")))
+(package-initialize)
+
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (setq package-enable-at-startup nil)
+(package-refresh-contents)
 (package-initialize)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
