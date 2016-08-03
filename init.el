@@ -13,11 +13,13 @@
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/")
 
 (require 'use-package)
-(require 'package)
-(mapc (lambda(p) (push p package-archives))
-      '(("marmalade" . "http://marmalade-repo.org/packages/")
-        ("melpa" . "https://melpa.org/packages/")))
-(package-initialize)
+(use-package package
+  :config
+  (mapc (lambda(p) (push p package-archives))
+        '(("marmalade" . "http://marmalade-repo.org/packages/")
+          ("melpa" . "https://melpa.org/packages/")))
+  (package-initialize)
+)
 
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
@@ -26,29 +28,38 @@
 (package-refresh-contents)
 (package-initialize)
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
-(require 'flymake-python-pyflakes)
-(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
-(setq flymake-python-pyflakes-executable "flake8")
+(setq use-package-always-ensure t)
+
+(use-package flymake-python-pyflakes
+  :pin melpa
+  :config
+  (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+  (add-hook 'after-init-hook #'global-flycheck-mode)
+  (setq flymake-python-pyflakes-executable "flake8"))
 
 ;(Setq comint-maximum-buffer-size 50000)
 ;(setq default-tab-width 4)
 
 ;;magit
-(require 'magit)
-(global-set-key (kbd "C-c C-m") 'magit-status)
+(use-package magit
+  :pin melpa
+  :commands magit-status 
+  :bind ("C-c C-m" . magit-status))
 
 ;;(require 'magit-gh-pulls)
 ;;(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
 
 ;;unique buffer names
-(require 'uniquify) 
-(setq 
-  uniquify-buffer-name-style 'post-forward
-  uniquify-separator ":")
+(use-package uniquify
+  :ensure nil
+  :config
+  (setq 
+   uniquify-buffer-name-style 'post-forward
+   uniquify-separator ":"))
 
-(require 'ido)
-(ido-mode t)
+(use-package ido
+  :config
+  (ido-mode t))
 
 ;; Get some column numbers up
 (setq column-number-mode t)
@@ -57,8 +68,9 @@
 (setq frame-title-format "%b")
 
 ;; Show paren matching
-(require 'paren)
-(show-paren-mode 1)
+(use-package paren
+  :config
+  (show-paren-mode 1))
 
 ;; Syntax highlighting!
 (global-font-lock-mode 1)
@@ -95,8 +107,6 @@
 	     (setq indent-tabs-mode nil)
 ;	     (setq python-indent 4)
              (setq outline-regexp "def\\|class ")))
-
-  
 
 ;; Change "HOME" and "END" keys to beg and end of buffer
 (global-set-key [home] 'beginning-of-buffer)
@@ -189,14 +199,17 @@
 ;         c-basic-offset 2)
 
 ;; go mode
-(setq load-path (cons "/usr/local/go/misc/emacs" load-path))
-(require 'go-mode)
-(add-hook 'before-save-hook #'gofmt-before-save)
+;(setq load-path (cons "/usr/local/go/misc/emacs" load-path))
+(use-package go-mode
+  :config
+  (add-hook 'before-save-hook #'gofmt-before-save))
 
 ;; Git Gutter
-(global-git-gutter-mode +1)
-(custom-set-variables
- '(git-gutter:update-interval 2))
+(use-package git-gutter
+  :config
+  (global-git-gutter-mode +1)
+  (custom-set-variables
+   '(git-gutter:update-interval 2)))
 
 ;; Dash docs
 (defun go-doc ()
