@@ -1,16 +1,23 @@
+;;; Package --- init.el
 
 ;;; Commentary:
 
 ;;; Code:
 ;; By default load up what was last here
+(require 'desktop)
 (desktop-read)
 
+(setq desktop-buffers-not-to-save "^$")
+(setq desktop-files-not-to-save "^$")
 (desktop-save-mode 1)
 
 (let ((default-directory "~/.emacs.d/"))
       (normal-top-level-add-subdirs-to-load-path))
 
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp/")
+
+;; Tramp nastiness
+(setq tramp-ssh-controlmaster-options "-o ControlPath=%%C -o ControlMaster=auto -o ControlPersist=no")
 
 (require 'use-package)
 (use-package package
