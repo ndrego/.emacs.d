@@ -1,3 +1,4 @@
+
 ;;; Package --- init.el
 
 ;;; Commentary:
@@ -37,15 +38,27 @@
 
 (setq use-package-always-ensure t)
 
+;; (add-to-list 'load-path "/usr/local/Cellar/doxymacs/1.8.0/share/emacs/site-lisp/")
+;; (add-hook 'c-mode-common-hook
+;;   (lambda ()
+;;     (require 'doxymacs)
+;;     (doxymacs-mode t)
+;;     (doxymacs-font-lock)))
+;; (setq doxymacs-doxygen-style "Qt")
+
+(use-package modern-cpp-font-lock
+  :ensure t
+  :config
+  (modern-c++-font-lock-global-mode t))
+
 (use-package flymake-python-pyflakes
-  :pin melpa
   :config
   (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
   (add-hook 'after-init-hook #'global-flycheck-mode)
   (setq flymake-python-pyflakes-executable "flake8"))
 
 ;(Setq comint-maximum-buffer-size 50000)
-;(setq default-tab-width 4)
+(setq default-tab-width 4)
 
 ;;magit
 (use-package magit
@@ -91,11 +104,11 @@
 ;(setq initial-dired-omit-files-p t)
 (setq make-backup-files nil)
 
-;; CPerl-Mode!
-(defalias 'perl-mode 'cperl-mode)
-
 ;; Change tabs to spaces
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
+(setq c-default-style "gnu"
+      c-basic-offset 2)
+(c-set-offset 'case-label '+)
 
 ;; (add-hook 'verilog-mode-hook '(lambda ()
 ;;     (add-hook 'local-write-file-hooks (lambda()
@@ -104,10 +117,6 @@
 ;; (remove-hook 'verilog-mode-hook '(lambda ()
 ;;     (add-hook 'local-write-file-hooks (lambda()
 ;;        (untabify (point-min) (point-max))))))
-
-;; Set tab-spacing to 4
-;(setq c-basic-offset 4)
-(setq tab-width 4)
 
 (add-hook 'python-mode-hook
            (lambda ()
@@ -139,8 +148,20 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(git-gutter:update-interval 2)
+ '(global-subword-mode t)
  '(inhibit-startup-screen t)
  '(load-home-init-file t t)
+ '(package-selected-packages
+   (quote
+    (flymd markdown-preview-mode doctags whitespace-cleanup-mode w3m use-package tabbar slack origami modern-cpp-font-lock magit-gh-pulls helm-swoop helm-dash go-guru github-issues github-clone git-gutter flymake-python-pyflakes flycheck)))
+ '(safe-local-variable-values
+   (quote
+    ((flycheck-clang-language-standard . "c++11")
+     (eval progn
+           (c-set-offset
+            (quote case-label)
+            (quote +))))))
  '(show-paren-mode t))
 
 (when (equal system-type 'darwin)
@@ -224,6 +245,9 @@
   (setq-local helm-dash-docsets '("Go")))
 
 (add-hook 'go-mode-hook 'go-doc)
+
+(load "/usr/local/Cellar/clang-format/2017-11-14/share/clang/clang-format.el")
+(global-set-key [C-M-tab] 'clang-format-region)
 
 (provide 'emacs)
 ;;; .emacs ends here
